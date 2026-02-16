@@ -10,7 +10,7 @@ const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
 
-  // 🎬 GSAP Animations
+  //USING GSAP Animations
   useEffect(() => {
     gsap.from(cardRef.current, {
       y: 100,
@@ -48,13 +48,13 @@ const Login = () => {
       <form
         ref={cardRef}
         onSubmit={handleLogin}
-        className="bg-white w-105 p-8 rounded-2xl shadow-2xl"
+        className="bg-red-500 w-105 p-8 rounded-2xl shadow-2xl"
       >
         <h2 className="text-3xl font-bold text-center mb-6 text-indigo-700">
           Login
         </h2>
 
-        {/* Email */}
+      
         <input
           type="email"
           placeholder="Email"
@@ -66,7 +66,7 @@ const Login = () => {
           focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
 
-        {/* Password */}
+        
         <input
           type="password"
           placeholder="Password"
@@ -78,14 +78,14 @@ const Login = () => {
           focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
 
-        {/* Error */}
+      
         {error && (
           <p className="text-red-500 text-sm mb-4 text-center">
             {error}
           </p>
         )}
 
-        {/* Button */}
+
         <button
           type="submit"
           className="w-full bg-indigo-600 text-white py-2

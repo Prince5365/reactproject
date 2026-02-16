@@ -77,7 +77,8 @@ const BookAppointment = () => {
             className="w-full border p-2 mb-4 rounded"
           />
 
-          {/* ✅ Disease Dropdown */}
+          {/* Using Disease Dropdown */}
+          
           <select
             name="disease"
             required
